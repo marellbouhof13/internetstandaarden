@@ -1,0 +1,151 @@
+body {
+    background-color: #fafafa;
+    color: #390A4C;
+    font-size: 1.1em;
+    padding: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: lighter;
+  font-size: 15px;
+}
+
+
+Homepagina
+
+header img{
+    height: 40px;
+}
+
+nav a {
+    background: #fafafa;
+    box-sizing: border-box;
+    padding: 1em 3em 1em 3em;
+    color: #390A4C;
+    font-weight: 200; 
+}
+
+nav a:hover {
+    color: #2D5F6E;
+}
+
+nav {
+    margin-top: 4em;
+
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+}
+
+.container img {
+    margin: 4em 6em 2em 3em;
+    width: 70%;
+    padding-left: 5rem;
+}
+
+h1 {
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 400;
+        font-style: normal;             
+    font-size: 2.8em;
+    padding-top: 0em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-family: "Fjalla One", sans-serif;
+        font-weight: 200;
+        font-style: normal;             
+    font-size: 2em;
+    padding-bottom: 1em;
+    color: #2D5F6E;
+    margin-top: 0.2em;
+}
+
+.container p {
+ padding-right: 12rem;
+}
+
+.container a {
+    background: #2D5F6E;
+    box-sizing: border-box;
+    padding: 1em 3em 1em 3em;
+    color: #fafafa;
+    font-weight: 200;
+}
+
+.container a:hover {
+    background-color: #390A4C;
+    color: #fafafa;
+}
+
+
+
+
+.overons {
+    display: flex;
+    align-items: center;
+    column-gap: 5em;
+    background-color: #2D5F6E;
+    padding: 3em 5em 3em 5em;
+    color: #fafafa;
+    font-weight: 300;
+}
+
+.overons img {
+    width: 20%;
+    padding-right: zem;
+}
+
+.overons p {
+    text-align: right;
+    padding-left: 10%;
+}
+
+.overons a {
+    color: #fafafa;
+}
+
+.overons a:hover {
+    color: #390A4C;
+}
+
+
+
+
+.afleveringen img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-bottom: 0.2em;
+  margin-top: 3em;
+}
+
+.afleveringen h1 {
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+.afleveringen p {
+    text-align: center;
+    margin-left: 22em;
+    margin-right: 22em;
+}
+
+
+
