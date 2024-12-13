@@ -9,11 +9,83 @@ body {
   font-size: 15px;
 }
 
+h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;             
+font-size: 2.8em;
+padding-top: 0em;
+margin-bottom: 0.2em;
+}
 
-Homepagina
+h2 {
+font-family: "Fjalla One", sans-serif;
+    font-weight: 200;
+    font-style: normal;             
+font-size: 2em;
+padding-bottom: 1em;
+color: #2D5F6E;
+margin-top: 0.2em;
+}
+
+h3 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;             
+    font-size: 2em;
+    padding-top: 0em;
+    margin-bottom: 0.2em;
+}
+
+a {
+    color: #fafafa;
+    transition: 200ms;
+}
+
+a:hover {
+    font-size: 16px;
+    color: #2D5F6E;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 2;
+    }
+}
+
+section {
+    animation-name: FadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes masker {
+    0% {
+        opacity: 3;
+        scale: 100%;
+        rotate: 0deg;
+    }
+    100% {
+        opacity: 0;
+        scale: 60%;
+        rotate: 100deg;
+    }
+}
+
+
+
+
+
+
 
 header img{
-    height: 40px;
+   max-width: 60%;
+   height: auto;
 }
 
 nav a {
@@ -22,9 +94,11 @@ nav a {
     padding: 1em 3em 1em 3em;
     color: #390A4C;
     font-weight: 200; 
+    transition: 200ms;
 }
 
 nav a:hover {
+    font-size: 16px;
     color: #2D5F6E;
 }
 
@@ -33,7 +107,7 @@ nav {
 
 }
 
-nav ul {
+header nav ul {
     display:flex;
     flex-direction: row;
     justify-content: left;
@@ -53,31 +127,13 @@ nav ul {
 
 .container img {
     margin: 4em 6em 2em 3em;
-    width: 70%;
+    width: 30%;
     padding-left: 5rem;
-}
-
-h1 {
-        font-family: "Fjalla One", sans-serif;
-        font-weight: 400;
-        font-style: normal;             
-    font-size: 2.8em;
-    padding-top: 0em;
-    margin-bottom: 0.2em;
-}
-
-h2 {
-    font-family: "Fjalla One", sans-serif;
-        font-weight: 200;
-        font-style: normal;             
-    font-size: 2em;
-    padding-bottom: 1em;
-    color: #2D5F6E;
-    margin-top: 0.2em;
 }
 
 .container p {
  padding-right: 12rem;
+ margin-bottom: 2em;
 }
 
 .container a {
@@ -86,6 +142,8 @@ h2 {
     padding: 1em 3em 1em 3em;
     color: #fafafa;
     font-weight: 200;
+    margin-top: 5em; 
+    border-radius: 30px;
 }
 
 .container a:hover {
@@ -96,7 +154,7 @@ h2 {
 
 
 
-.overons {
+.doorlinkoverons {
     display: flex;
     align-items: center;
     column-gap: 5em;
@@ -106,21 +164,21 @@ h2 {
     font-weight: 300;
 }
 
-.overons img {
+.doorlinkoverons img {
     width: 20%;
     padding-right: zem;
 }
 
-.overons p {
+.doorlinkoverons p {
     text-align: right;
     padding-left: 10%;
 }
 
-.overons a {
+.doorlinkoverons a {
     color: #fafafa;
 }
 
-.overons a:hover {
+.doorlinkoverons a:hover {
     color: #390A4C;
 }
 
@@ -128,17 +186,22 @@ h2 {
 
 
 .afleveringen img {
+    animation-name: masker;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  margin-bottom: 0.2em;
-  margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 0.2em;
+    margin-top: 3em;
 }
 
-.afleveringen h1 {
+.afleveringen h2 {
     text-align: center;
     margin-top: 0.2em;
+    color: #390A4C;
+    font-size:2em;
 }
 
 .afleveringen p {
@@ -147,5 +210,170 @@ h2 {
     margin-right: 22em;
 }
 
+.afleveringen ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    column-gap: 7em;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 4em;
+}
+
+.afleveringen a {
+    color: #390A4C;
+}
+
+.afleveringen a:hover {
+    color: #2D5F6E;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 3em;
+}
 
 
+.updates {
+    background-color: #390A4C;
+}
+
+.updates p {
+    text-align: center;
+    color: #fafafa;
+    margin-top: 0.2em;
+    padding-bottom: 5em;
+}
+
+.updates h2 {
+    text-align: center;
+    color: #fafafa;
+    padding-top: 3em;
+    margin-top: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    column-gap: 12em;
+    padding: 3em 5em 3em 10em;
+
+}
+
+footer ul {
+    list-style: none;
+    justify-content: left;
+    padding-left: 0%;
+    margin-top: 0%;
+}
+
+footer a {
+    color: #390A4C; 
+}
+
+footer h2 {
+    color: #390A4C;
+    margin-bottom: 0;
+}
+
+
+
+.overons {
+    background-color: #390A4C;
+    color: #fafafa;
+    text-align: center;
+    padding: 5em 23em 5em 23em;
+}
+
+.overons h2 {
+    color: #fafafa;
+}
+
+
+
+.kennismaking {
+    display: flex;
+    align-items: center;
+    margin: 5em 5em 5em 5em;
+
+}
+
+.kennismaking img {
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+
+}
+
+.kennismaking p {
+    padding: 0em 4em 0em 4em;
+    text-align: center;
+}
+
+.kennismaking h2 {
+    text-align: center;
+}
+
+
+
+.groenachtergrond {
+    background-color: #2D5F6E;
+    color: #fafafa;
+    text-align: center;
+    padding: 5em 21em 5em 21em;
+}
+
+.groenachtergrond h2 {
+    color: #fafafa;
+}
+
+
+
+article {
+    display: flex;
+    align-items: left;
+    margin-right: 25em;
+    margin-top: 6em;
+}
+
+article ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style: none;
+    column-gap: 4em;
+    margin-top: 2em;
+    padding-left: 0%;
+}
+
+article a {
+    color:#390A4C;
+    transition: 200ms;
+}
+
+article a:hover {
+    color: #2D5F6E;
+}
+
+article img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+}
+
+article h3 {
+    font-size: 20px;
+}
