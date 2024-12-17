@@ -64,20 +64,6 @@ section {
     animation-duration: 2s;
 }
 
-@keyframes masker {
-    0% {
-        opacity: 3;
-        scale: 100%;
-        rotate: 0deg;
-    }
-    100% {
-        opacity: 0;
-        scale: 60%;
-        rotate: 100deg;
-    }
-}
-
-
 
 
 
@@ -115,28 +101,54 @@ header nav ul {
     list-style: none;
 }
 
+footer {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    column-gap: 12em;
+    padding: 3em 5em 3em 10em;
+
+}
+
+footer ul {
+    list-style: none;
+    justify-content: left;
+    padding-left: 0%;
+    margin-top: 0%;
+}
+
+footer a {
+    color: #390A4C; 
+}
+
+footer h2 {
+    color: #390A4C;
+    margin-bottom: 0;
+}
 
 
 
-.container {
+/* Home */
+
+.banner {
     display: flex;
     align-items: center;
     column-gap: 5px;
 
 }
 
-.container img {
+.banner img {
     margin: 4em 6em 2em 3em;
     width: 30%;
     padding-left: 5rem;
 }
 
-.container p {
+.banner p {
  padding-right: 12rem;
  margin-bottom: 2em;
 }
 
-.container a {
+.banner a {
     background: #2D5F6E;
     box-sizing: border-box;
     padding: 1em 3em 1em 3em;
@@ -146,7 +158,7 @@ header nav ul {
     border-radius: 30px;
 }
 
-.container a:hover {
+.banner a:hover {
     background-color: #390A4C;
     color: #fafafa;
 }
@@ -184,6 +196,20 @@ header nav ul {
 
 
 
+
+
+@keyframes masker {
+    0% {
+        opacity: 3;
+        scale: 100%;
+        rotate: 0deg;
+    }
+    100% {
+        opacity: 0;
+        scale: 60%;
+        rotate: 100deg;
+    }
+}
 
 .afleveringen img {
     animation-name: masker;
@@ -239,6 +265,7 @@ video {
 }
 
 
+
 .updates {
     background-color: #390A4C;
 }
@@ -260,32 +287,9 @@ video {
 
 
 
-footer {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    column-gap: 12em;
-    padding: 3em 5em 3em 10em;
-
-}
-
-footer ul {
-    list-style: none;
-    justify-content: left;
-    padding-left: 0%;
-    margin-top: 0%;
-}
-
-footer a {
-    color: #390A4C; 
-}
-
-footer h2 {
-    color: #390A4C;
-    margin-bottom: 0;
-}
 
 
+/* Over ons */
 
 .overons {
     background-color: #390A4C;
@@ -326,6 +330,9 @@ footer h2 {
 }
 
 
+
+
+/* Overzichtspagina */
 
 .groenachtergrond {
     background-color: #2D5F6E;
